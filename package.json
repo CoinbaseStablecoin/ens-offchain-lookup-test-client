@@ -5,7 +5,8 @@
   "license": "Apache-2.0",
   "scripts": {
     "prettier": "prettier --write ./src",
-    "typechain": "typechain --target ethers-v5 --out-dir src/types/contracts './node_modules/@ensdomains/ens-contracts/artifacts/contracts/**/*[!dbg].json' './abi/**/*.json'"
+    "typechain": "typechain --target ethers-v5 --out-dir src/types/contracts './node_modules/@ensdomains/ens-contracts/artifacts/contracts/**/*[!dbg].json' './abi/**/*.json'",
+    "client": "ts-node src/client.ts"
   },
   "dependencies": {
     "@ensdomains/ens-contracts": "^0.0.11",

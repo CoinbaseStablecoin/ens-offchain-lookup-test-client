@@ -1,11 +1,16 @@
 # ens-offchain-lookup-test-client
 
+## Requirements
+
+- Node.js ^17.x
+- Yarn ^1.22.x
+
 ## Usage
 
 ```shell
 $ yarn install
 $ yarn typechain
-$ JSON_RPC_URL="https://..." REGISTRY_ADDRESS="0x...." ts-node src/client.ts "pete.cbdev.eth"
+$ JSON_RPC_URL="https://..." REGISTRY_ADDRESS="0x...." yarn client "pete.cbdev.eth"
 Looking up pete.cbdev.eth...
 Finding resolver contract address for pete.cbdev.eth...not found
 Finding resolver contract address for cbdev.eth...found - 0x1Fc0719d4E60D68306a8FEF043029b75D1078874
